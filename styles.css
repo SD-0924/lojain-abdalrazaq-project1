@@ -1,0 +1,116 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg_body);
+    color: var(--body-text);
+}
+/* Header Style */
+header {
+    background-color: var(--bg_default);
+    box-shadow: 0 2px 4px var(--lines-color);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar-left-side h1 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--brand-primary);
+    font-size: 16px;
+}
+.navbar-right-side {
+    display: flex; 
+    gap: 5px; /* Space between buttons */
+}
+
+/*  Nav's Buttons Style */
+.btn {
+    display: flex; /* Align icon and text */
+    align-items: center; 
+    background-color: var(--bg_default); 
+    border: 1px solid var(--lines-color);
+    border-radius: 5px;
+    padding: 5px 10px; 
+    color: var(--body-text);
+}
+ion-icon {
+    margin-right: 5px;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: var(--brand-primary);
+    color: var(--bg_default);
+}
+
+/* Main Title Style */
+.title-section{
+    background-color: var(--bg_default);
+    text-align: center;
+}
+.main-title {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 19px;
+    color: var(--brand-secondary);
+    font-weight: 700;
+    margin: 0;
+}
+.subtitle {
+    font-size: 14px;
+    color: var(--body-text);
+    margin: 0;
+    padding-top: 0; /* No padding on top */
+}
+/* Card Container Style */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    color: var(--body-text);
+}
+.card {
+    background-color: var(--bg_default); 
+    border: 1px solid var(--lines-color); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+    height: 300px;
+    text-align: left; 
+    padding: 0px;
+}
+/* Card Image Style */
+.card-image {
+    max-width: 100%;;
+    height: auto; 
+    border-radius: 5px; 
+    height: 150px; /* Set a fixed height */
+}
+.card-title {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0 5px; 
+    padding-left: 10px;
+}
+.technology {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 5px 0; 
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.author {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0; 
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.rating{
+    padding-left: 7px;
+}
