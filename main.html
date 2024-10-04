@@ -13,6 +13,7 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
+
         <!-- the header part-->
         <header>
             <nav class="navbar">
@@ -34,19 +35,53 @@
 
         <!-- the main part of the main webpage-->
         <main>
+            <!-- Implementation of the triangle-->
             <div class="triangle-part">
                 <div class="triangle-1"></div>
                 <div class="triangle-2"></div>
             </div>
+
+            <!-- Title Section-->
             <section class="title-section">
                 <h1 class="main-title">Welcome to our website!</h1>
                 <p class="subtitle">We have a new design that's fresh, modern, and easy to use.</p>
             </section>
+
+            <!--Search, Filter, Sort Part-->
+            <section class="search-filter-section">
+                <div class="search-filter-sort-container">
+                    <div class="search-container">
+                        <ion-icon name="search" class="search-icon"></ion-icon>
+                        <input type="text" class="search-input" placeholder="Search the website...">
+                    </div>
+                    <div class="sort-filter">
+                        <div class="sort-container">
+                            <label for="sort-select" class="sort-label">Sort by:</label>
+                            <select id="sort-select" class="select">
+                                <option value="default">Default</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </select>
+                        </div>
+                        <div class="filter-container">
+                            <label for="filter-select" class="filter-label">Filter by:</label>
+                            <select id="filter-select" class="select">
+                                <option value="default">Default</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!--Card Container Section-->
             <section class="card-container">
                 <!--HTML Course Cards-->
                 <div class="card">
                     <img src="./assests/Logos/html.png" alt="HTML" class="card-image">
-                    <h4 class="card-title">Web Development Language</h4>
+                    <h4 class="card-title">Web Development Languages</h4>
                     <p class="technology">HTML</p>
                     <span class="rating">⭐⭐⭐⭐☆</span>
                     <p class="author">Author: Sara Smith</p>
@@ -54,17 +89,52 @@
                 <!--CSS Course Card-->
                 <div class="card">
                     <img src="./assests/Logos/css.webp" alt="CSS" class="card-image">
-                    <h4 class="card-title">Web Development Language</h4>
+                    <h4 class="card-title">Web Development Languages</h4>
                     <p class="technology">CSS</p>
                     <span class="rating">⭐⭐⭐⭐☆</span>
                     <p class="author">Author: David Lee</p>
                 </div>
+                <!--JavaScript Course Card-->
+                <div class="card">
+                    <img src="./assests/Logos/javascript.jpg" alt="JS" class="card-image">
+                    <h4 class="card-title">Web Development Languages</h4>
+                    <p class="technology">JavaScript</p>
+                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <p class="author">Author: Emily Chen</p>
+                </div>
+                <!--JQuery Course Card-->
+                <div class="card">
+                    <img src="./assests/Logos/jquery.png" alt="jQuery" class="card-image">
+                    <h4 class="card-title">Frontend Frameworks and Libraries</h4>
+                    <p class="technology">jQuery</p>
+                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <p class="author">Author: John Johnson</p>
+                </div>
+                <!-- Angular -->
+                <div class="card">
+                    <img src="./assests/Logos/angular.png" alt="Angular" class="card-image">
+                    <h4 class="card-title">Frontend Frameworks and Libraries</h4>
+                    <p class="technology">Angular</p>
+                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <p class="author">Author: Jessica Davis</p>
+                </div>
+                <!-- React -->
+                <div class="card">
+                    <img src="./assests/Logos/react.webp" alt="React" class="card-image">
+                    <h4 class="card-title">Frontend Frameworks and Libraries</h4>
+                    <p class="technology">React</p>
+                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <p class="author">Author: Daniel Brown</p>
+                </div> 
             </section>
         </main>
 
         <!-- the footer part of the webpage-->
         <footer>
-            <!-- Footer Part-->
+            <p class="footer-text">
+                Developed with <ion-icon name="heart"></ion-icon>&copy; 2024
+            </p>
         </footer>
+        
     </body>
 </html>

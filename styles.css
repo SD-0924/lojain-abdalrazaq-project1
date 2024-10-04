@@ -1,14 +1,21 @@
+/* Styling File for the Home Page */
 body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg_body);
     color: var(--body-text);
+    padding-top: 48px; /* Adjust based on the height of the header */
 }
+/* ********************************************************************* */
 /* Header Style */
 header {
     background-color: var(--bg_default);
-    box-shadow: 0 2px 4px var(--lines-color);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .navbar {
     display: flex;
@@ -26,7 +33,6 @@ header {
     display: flex; 
     gap: 5px; /* Space between buttons */
 }
-
 /*  Nav's Buttons Style */
 .btn {
     display: flex; /* Align icon and text */
@@ -37,7 +43,7 @@ header {
     padding: 5px 10px; 
     color: var(--body-text);
 }
-ion-icon {
+ion-icon { /*for the icons inside the buttons */
     margin-right: 5px;
     font-size: 16px;
 }
@@ -45,14 +51,15 @@ ion-icon {
     background-color: var(--brand-primary);
     color: var(--bg_default);
 }
-
+/* ********************************************************************* */
 /* Main Title Style */
 .title-section{
     background-color: var(--bg_default);
     text-align: center;
+    padding-top: 0; /* Remove padding from title section */
+    padding-bottom: 30px
 }
 .main-title {
-    text-align: center;
     padding-top: 40px;
     font-size: 19px;
     color: var(--brand-secondary);
@@ -63,12 +70,44 @@ ion-icon {
     font-size: 14px;
     color: var(--body-text);
     margin: 0;
-    padding-top: 0; /* No padding on top */
+    padding-top: 0;
+    text-align: left;
+    padding-left: calc(50% - 105px);
 }
+/*Search, Filter, Sort Style*/
+.search-filter-sort-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 85px 40px 85px;
+    background-color: var(--bg_default);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--lines-color);
+}
+.search-filter-sort-container ion-icon {
+    color: var(--body-text);
+    font-size: 20px;
+    vertical-align: middle; /* Align the icon vertically with the input text */
+    margin-right: 8px; /* Add some space between icon and input text */
+}
+input{
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    margin-left: 8px;
+    padding: 8px;
+    width: 500px;
+}
+.sort-filter{
+    display: flex;
+    gap: 80px;
+}
+
 /* Card Container Style */
 .card-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Wrap the cards in the line */
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -113,4 +152,17 @@ ion-icon {
 }
 .rating{
     padding-left: 7px;
+}
+
+/* ********************************************************************* */
+/* Footer Style */
+footer ion-icon {
+    color: var(--heart-color); /* Apply the heart color */
+    font-size: 14px;
+    vertical-align: middle; /* Align the icon with the text */
+}
+footer {
+    font-size: 12px;
+    text-align: center; /* Center the text horizontally */
+    padding: 10px 0;
 }
