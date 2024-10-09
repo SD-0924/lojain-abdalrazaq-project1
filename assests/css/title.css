@@ -1,12 +1,34 @@
+/* Triangle Styling */
+.traingles-container{
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.triangle-1, .triangle-2{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-style: solid;
+}
+.triangle-1{
+    left: 0;
+    border-width: 60px 80vw 0 0;
+    border-color: var(--brand-primary) transparent transparent transparent;
+}
+.triangle-2{
+    right: 0;
+    border-width: 60px 0 0 80vw; 
+    border-color: var(--brand-secondary) transparent transparent transparent;
+}
 /* Main Title Style */
 .title-section{
     background-color: var(--bg_default);
     text-align: center;
-    padding-top: 0; /* Remove padding from title section */
-    padding-bottom: 30px;
 }
 .main-title {
-    padding-top: 40px;
     font-size: var(--font-size-xlarge);
     color: var(--brand-secondary);
     font-weight: var(--font-weight-bold);
