@@ -1,7 +1,7 @@
+@import url('./variables.css');
 @import url('./header.css');
 @import url('./title.css');
 @import url('./footer.css');
-@import url('./variables.css');
 
 /* Styling File for the Home Page */
 body {
@@ -11,28 +11,6 @@ body {
     background-color: var(--bg_body);
     color: var(--body-text);
     padding-top: 48px; /* Adjust based on the height of the header */
-}
-/* Main Title Style */
-.title-section{
-    background-color: var(--bg_default);
-    text-align: center;
-    padding-top: 0; /* Remove padding from title section */
-    padding-bottom: 30px;
-}
-.main-title {
-    padding-top: 40px;
-    font-size: 19px;
-    color: var(--brand-secondary);
-    font-weight: 700;
-    margin: 0;
-}
-.subtitle {
-    font-size: 14px;
-    color: var(--body-text);
-    margin: 0;
-    padding-top: 0;
-    text-align: left;
-    padding-left: calc(50% - 105px);
 }
 /*Search, Filter, Sort Style*/
 .search-filter-sort-container {

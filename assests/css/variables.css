@@ -8,5 +8,7 @@
     --lines-color: #DDDDDD;
     --body-text: #333333;
     --heart-color: #DC143C;
+
+    /* New value added for the star color */
     --star-color: #FFD700;
 }
