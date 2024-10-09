@@ -1,0 +1,51 @@
+/* Main Title Style */
+.title-section{
+    background-color: var(--bg_default);
+    text-align: center;
+    padding-top: 0; /* Remove padding from title section */
+    padding-bottom: 30px
+}
+.main-title {
+    padding-top: 40px;
+    font-size: 19px;
+    color: var(--brand-secondary);
+    font-weight: 700;
+    margin: 0;
+}
+.subtitle {
+    font-size: 14px;
+    color: var(--body-text);
+    margin: 0;
+    padding-top: 0;
+    text-align: left;
+    padding-left: calc(50% - 105px);
+}
+/*Search, Filter, Sort Style*/
+.search-filter-sort-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 85px 40px 85px;
+    background-color: var(--bg_default);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--lines-color);
+}
+.search-filter-sort-container ion-icon {
+    color: var(--body-text);
+    font-size: 20px;
+    vertical-align: middle; /* Align the icon vertically with the input text */
+    margin-right: 8px; /* Add some space between icon and input text */
+}
+input{
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    margin-left: 8px;
+    padding: 8px;
+    width: 500px;
+}
+.sort-filter{
+    display: flex;
+    gap: 80px;
+}
