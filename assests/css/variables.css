@@ -11,4 +11,16 @@
 
     /* New value added for the star color */
     --star-color: #FFD700;
+
+    /* Font sizes */
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 16px;
+    --font-size-xlarge: 18px;
+    --font-size-xxlarge: 24px;
+
+    /* Font weights */
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --font-weight-light: 200;
 }

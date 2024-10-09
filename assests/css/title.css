@@ -7,16 +7,16 @@
 }
 .main-title {
     padding-top: 40px;
-    font-size: 19px;
+    font-size: var(--font-size-xlarge);
     color: var(--brand-secondary);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 0;
 }
 .subtitle {
-    font-size: 14px;
+    font-size: var(--font-size-medium);
     color: var(--body-text);
     margin: 0;
     padding-top: 0;
     text-align: left;
-    padding-left: calc(50% - 105px);
+    padding-left: calc(50% - 100px);
 }

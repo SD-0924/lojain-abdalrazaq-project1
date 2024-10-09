@@ -1,11 +1,11 @@
 /* Footer Style */
 footer ion-icon {
     color: var(--heart-color); /* Apply the heart color */
-    font-size: 14px;
+    font-size: var(--font-size-medium);
     vertical-align: middle; /* Align the icon with the text */
 }
 footer {
-    font-size: 12px;
+    font-size: var(--font-size-small);
     text-align: center; /* Center the text horizontally */
     padding: 10px 0;
 }
