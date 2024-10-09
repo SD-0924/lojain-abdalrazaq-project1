@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-color: var(--bg_body);
     color: var(--body-text);
-    padding-top: 48px; /* Adjust based on the height of the header */
+    padding-top: 48px;
 }
 /*Search, Filter, Sort Style*/
 .search-filter-sort-container {
