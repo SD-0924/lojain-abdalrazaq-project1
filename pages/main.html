@@ -5,11 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Topics</title>
         <!-- including styles-->
-        <link rel="stylesheet" href="./styles/variables.css">
-        <link rel="stylesheet" href="./styles/styles.css">
-        <link rel="stylesheet" href="./styles/header.css">
-        <link rel="stylesheet" href="./styles/title.css">
-        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="../assests/css/style.css">
         <!-- including fonts-->
         <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
         <!-- including icons-->
@@ -17,7 +13,6 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
-
         <!-- the header part-->
         <header>
             <nav class="navbar">
@@ -26,11 +21,11 @@
                 </div>
                 <div class="navbar-right-side">
                     <button class="btn" id="dark-mode-toggle">
-                        <ion-icon name="moon-outline"></ion-icon>
+                        <ion-icon name="moon"></ion-icon>
                         Dark Mode
                     </button>
                     <button class="btn" id="favorites-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
+                        <ion-icon name="heart"></ion-icon>
                         Favorites
                     </button>
                 </div>
@@ -39,16 +34,12 @@
 
         <!-- the main part of the main webpage-->
         <main>
-            <!-- Implementation of the triangle-->
-            <div class="triangle-part">
-                <div class="triangle-1"></div>
-                <div class="triangle-2"></div>
-            </div>
-
             <!-- Title Section-->
             <section class="title-section">
-                <h1 class="main-title">Welcome to our website!</h1>
-                <p class="subtitle">We have a new design that's fresh, modern, and easy to use.</p>
+                <div>
+                    <h1 class="main-title">Welcome to our website!</h1>
+                    <p class="subtitle">We have a new design that's fresh, modern, and easy to use.</p>
+                </div>          
             </section>
 
             <!--Search, Filter, Sort Part-->
@@ -78,58 +69,98 @@
                     </div>
                 </div>
             </section>
-            
 
+            <!-- Program Founds-->
+            <section class="program-found">
+                <p class="program-found-text">"24" Web Topics Found</p>
+            </section>
+            
             <!--Card Container Section-->
             <section class="card-container">
                 <!--HTML Course Cards-->
                 <div class="card">
-                    <img src="./assests/Logos/html.png" alt="HTML" class="card-image">
+                    <img src="../assests/Logos/html.png" alt="HTML" class="card-image">
                     <h4 class="card-title">Web Development Languages</h4>
                     <p class="technology">HTML</p>
-                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <span class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </span>
                     <p class="author">Author: Sara Smith</p>
                 </div>
                 <!--CSS Course Card-->
                 <div class="card">
-                    <img src="./assests/Logos/css.webp" alt="CSS" class="card-image">
+                    <img src="../assests/Logos/css.webp" alt="CSS" class="card-image">
                     <h4 class="card-title">Web Development Languages</h4>
                     <p class="technology">CSS</p>
-                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <span class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </span>
                     <p class="author">Author: David Lee</p>
                 </div>
                 <!--JavaScript Course Card-->
                 <div class="card">
-                    <img src="./assests/Logos/javascript.jpg" alt="JS" class="card-image">
+                    <img src="../assests/Logos/javascript.jpg" alt="JS" class="card-image">
                     <h4 class="card-title">Web Development Languages</h4>
                     <p class="technology">JavaScript</p>
-                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <span class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </span>
                     <p class="author">Author: Emily Chen</p>
                 </div>
                 <!--JQuery Course Card-->
                 <div class="card">
-                    <img src="./assests/Logos/jquery.png" alt="jQuery" class="card-image">
+                    <img src="../assests/Logos/jquery.png" alt="jQuery" class="card-image">
                     <h4 class="card-title">Frontend Frameworks and Libraries</h4>
                     <p class="technology">jQuery</p>
-                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <span class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </span>
                     <p class="author">Author: John Johnson</p>
                 </div>
                 <!-- Angular -->
                 <div class="card">
-                    <img src="./assests/Logos/angular.png" alt="Angular" class="card-image">
+                    <img src="../assests/Logos/angular.png" alt="Angular" class="card-image">
                     <h4 class="card-title">Frontend Frameworks and Libraries</h4>
                     <p class="technology">Angular</p>
-                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <span class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </span>
                     <p class="author">Author: Jessica Davis</p>
                 </div>
                 <!-- React -->
                 <div class="card">
-                    <img src="./assests/Logos/react.webp" alt="React" class="card-image">
+                    <img src="../assests/Logos/react.webp" alt="React" class="card-image">
                     <h4 class="card-title">Frontend Frameworks and Libraries</h4>
                     <p class="technology">React</p>
-                    <span class="rating">⭐⭐⭐⭐☆</span>
+                    <span class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </span>
                     <p class="author">Author: Daniel Brown</p>
-                </div> 
+                </div>
             </section>
         </main>
         <!-- the footer part of the webpage-->
@@ -137,7 +168,6 @@
             <p class="footer-text">
                 Developed with <ion-icon name="heart"></ion-icon>&copy; 2024
             </p>
-        </footer>
-        
+        </footer>   
     </body>
 </html>
