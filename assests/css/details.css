@@ -11,3 +11,48 @@ body{
     color: var(--body-text);
     padding-top: 48px;
 }
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 50px 350px 0px 350px;
+    gap: 30px;
+}
+/* Course Details Styling*/
+#course-details{
+    padding-left: 30px;
+    padding-right: 30px;
+    max-height: 230px; /* Set a maximum height */
+    border: 2px solid black; /* Add a border around the course details / to be removed later*/
+}
+.category{
+    font-size: var(--font-size-medium);
+    color: var(--brand-secondary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0px;
+}
+.course-title{
+    font-weight: var(--font-weight-bold);
+    margin: 0px;
+}
+.rating ion-icon{
+    color: var(--star-color);
+    font-size: var(--font-size-medium);
+    margin-right: 0px;
+}
+.description{
+    font-size: var(--font-size-medium);
+}
+
+#side-bar{
+    height: auto; /* Allow it to take its natural height */
+    border: 2px solid black;
+    padding: 20px;
+}
+.course-logo{
+    width: 100%;
+}
+#course-topics{
+    margin-top: -100px; /* Adjust the negative margin as needed */
+    border: 2px solid black;
+}
