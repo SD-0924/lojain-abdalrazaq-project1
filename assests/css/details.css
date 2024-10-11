@@ -10,6 +10,8 @@ body {
     background-color: var(--bg_body);
     color: var(--body-text);
     padding-top: 48px;
+    background: linear-gradient(to bottom, var(--body-text) 50%, var(--bg_body) 50%);
+
 }
 /* Main Container Styling */
 .main-container {
@@ -32,6 +34,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: var(--font-size-medium);
+    color: var(--bg_default);
 }
 .category {
     font-weight: var(--font-weight-bold);
