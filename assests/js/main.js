@@ -1,12 +1,5 @@
 import data from "../data/topics.js"
-
-/**
- *  Fetch the data from the data.json file
- * const fetchData = () => {
-    return data;
-};
- */
-
+let filteredCourses = data;
 /**
  *  Create single course html with given info
  */
@@ -34,16 +27,23 @@ const createCourseList = (courseList) => {
     const arr = courseList.map(course => createCourse(course)).join("")
     return arr
 }
-// genrate the course on the HTML file
 
+const searchCourse = (list,searchText) => {
+    return list.filter(course => course.topic.toLowerCase().includes(searchText.toLowerCase()))
+}
 /**
  * 
  */
 const renderCourses = () => {
     const courseContainer = document.getElementById("card-container")
-    const courseHTML = createCourseList(data)
+    const courseHTML = createCourseList(filteredCourses)
     courseContainer.innerHTML = courseHTML
 }
 
+renderCourses()
 
-document.onload = renderCourses()
+document.getElementById("searchInput").oninput = (evt) =>{
+    filteredCourses = searchCourse(data, evt.target.value)
+    renderCourses()
+}
+
