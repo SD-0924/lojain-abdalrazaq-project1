@@ -25,6 +25,7 @@ body {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 /* Course Details Styling */
 .course-details{
@@ -61,13 +62,15 @@ body {
 /* Course Topics Styling */
 .course-topics {
     border: 1px solid black;
+    margin-top: 20px;
     max-width: 500px;
 }
 .topics-title{
     font-size: var(--font-size-xlarge);
     font-weight: var(--font-weight-bold);
-    padding-left: 20px;
-}
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;}
 .topics-table {
     width: 100%;
     border-collapse: collapse;
@@ -79,6 +82,9 @@ body {
     padding: 10px 15px;
     vertical-align: middle; /* Align icons and text in the middle */
     font-size: var(--font-size-medium);
+}
+td ion-icon{
+    color: var(--brand-secondary);
 }
 
 
