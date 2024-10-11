@@ -13,6 +13,7 @@
     --star-color: #FFD700;
 
     /* Font sizes */
+    --font-size-xsmall: 0.625rem;  /* 10px */
     --font-size-small: 0.75rem;    /* 12px */
     --font-size-medium: 0.875rem;  /* 14px */
     --font-size-large: 1rem;       /* 16px */

@@ -13,16 +13,14 @@ body {
 }
 /* Main Container Styling */
 .main-container {
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center; /* Centers the content horizontally */
+    justify-content: center;
     margin-top: 0;
 }
 /* Course Details and Topics Container Styling */
 .details-topics-container{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -30,7 +28,6 @@ body {
 }
 /* Course Details Styling */
 .course-details{
-    border: 1px solid black;
     max-width: 500px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -62,7 +59,8 @@ body {
 }
 /* Course Topics Styling */
 .course-topics {
-    border: 1px solid black;
+    box-shadow: 1px 1px 5px var(--lines-color);
+    background-color: var(--bg_default);
     margin-top: 20px;
     max-width: 500px;
 }
@@ -78,11 +76,11 @@ body {
     border-collapse: collapse;
 }
 .topics-table tr {
-    border-bottom: 1px solid var(--lines-color); /* Border between rows */
+    border-bottom: 1px solid var(--lines-color);
 }
 .topics-table td {
     padding: 10px 15px;
-    vertical-align: middle; /* Align icons and text in the middle */
+    vertical-align: middle;
     font-size: var(--font-size-medium);
 }
 td ion-icon{
@@ -90,23 +88,56 @@ td ion-icon{
 }
 /*Course Side Bar Styling */
 .course-sidebar {
-    border: 1px solid black;
+    box-shadow: 1px 1px 5px var(--lines-color);
+    max-height: 700px;
+    max-width: 280px;
     margin-top: 20px;
-    max-width: 15%;
-    max-height: 50%;
     background-color: var(--bg_default);
 }
-.inner-sidebar{
-    border: 1px solid black;
+.inner-sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .course-logo {
     max-width: 100%;
-    border: 1px solid black;
+}
+.instructor-name {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+/* Favorite Section Styling */
+.favorite-question {
+    font-size: var(--font-size-small);
 }
 .add-to-favorites {
-    border: 1px solid black;
-    text-align: center;
+    border: 1px solid var(--lines-color); 
+    box-shadow: 1px 1px 5px var(--lines-color);
+    text-align: start;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Button styling */
+.add-fav-btn {
+    font-size: var(--font-size-large);
+    background-color: var(--brand-secondary); 
+    color: var(--bg_default);
+    padding: 10px 20px;
+    border: none;
+    outline: none; 
+    cursor: pointer; 
+}
+.add-fav-btn:hover {
+    background-color: var(--brand-primary); 
+}
+.credits-info {
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-light);
+    padding-left: 30%;
 }
