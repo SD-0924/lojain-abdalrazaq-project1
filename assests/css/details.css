@@ -141,3 +141,6 @@ td ion-icon{
     font-weight: var(--font-weight-light);
     padding-left: 30%;
 }
+.add-fav-btn ion-icon {
+    vertical-align: middle;
+}
