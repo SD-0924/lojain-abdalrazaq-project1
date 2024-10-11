@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    margin-top: 20px;
 }
 /* Course Details Styling */
 .course-details{
@@ -70,7 +71,8 @@ body {
     font-weight: var(--font-weight-bold);
     padding-left: 0px;
     margin-top: 0px;
-    margin-bottom: 0px;}
+    margin-bottom: 0px;
+}
 .topics-table {
     width: 100%;
     border-collapse: collapse;
@@ -86,27 +88,25 @@ body {
 td ion-icon{
     color: var(--brand-secondary);
 }
-
-
-
-
 /*Course Side Bar Styling */
 .course-sidebar {
     border: 1px solid black;
-    max-width: 20%;
-}
-.course-logo {
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 15px;
-}
-.add-to-favorites {
-    text-align: center;
-    margin-top: 20px; /* Adjust this margin to control vertical spacing */
+    margin-top: 20px;
+    max-width: 15%;
+    max-height: 50%;
+    background-color: var(--bg_default);
 }
 .inner-sidebar{
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.course-logo {
+    max-width: 100%;
+    border: 1px solid black;
+}
+.add-to-favorites {
+    border: 1px solid black;
+    text-align: center;
 }
