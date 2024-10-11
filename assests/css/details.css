@@ -11,15 +11,16 @@ body {
     color: var(--body-text);
     padding-top: 48px;
 }
+/* Main Container Styling */
 .main-container {
     border: 1px solid black;
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Aligns all content to the top */
+    align-items: flex-start;
     justify-content: center; /* Centers the content horizontally */
     margin-top: 0;
-    min-height: 100vh; /* Makes sure the container takes the full viewport height */
 }
+/* Course Details and Topics Container Styling */
 .details-topics-container{
     border: 1px solid black;
     display: flex;
@@ -28,12 +29,40 @@ body {
 /* Course Details Styling */
 .course-details{
     border: 1px solid black;
-    max-width: 450px;
+    max-width: 500px;
+    padding: 20px;
+    font-size: var(--font-size-medium);
+}
+.category {
+    font-weight: var(--font-weight-bold);
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.course-title{
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-bold);
+    color: var(--brand-secondary);
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.rating{
+    font-size: var(--font-size-medium);
+    color: var(--star-color);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+.rating ion-icon{
+    margin-right: 0px;
 }
 /* Course Topics Styling */
 .course-topics{
     border: 1px solid black;
     max-width: 450px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 /*Course Side Bar Styling */
 .course-sidebar {
