@@ -1,4 +1,4 @@
-[
+export default[
   {
     "category": "Web Development Languages",
     "rating": 4.1,
