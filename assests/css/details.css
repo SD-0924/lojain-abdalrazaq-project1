@@ -11,13 +11,14 @@ body {
     color: var(--body-text);
     padding-top: 48px;
 }
-.main-container{
+.main-container {
     border: 1px solid black;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0px;
+    align-items: flex-start; /* Aligns all content to the top */
+    justify-content: center; /* Centers the content horizontally */
+    margin-top: 0;
+    min-height: 100vh; /* Makes sure the container takes the full viewport height */
 }
 .details-topics-container{
     border: 1px solid black;
@@ -35,12 +36,9 @@ body {
     max-width: 450px;
 }
 /*Course Side Bar Styling */
-.course-sidebar{
+.course-sidebar {
     border: 1px solid black;
     max-width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .course-logo {
     max-width: 80%;
@@ -49,7 +47,11 @@ body {
 }
 .add-to-favorites {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; /* Adjust this margin to control vertical spacing */
 }
-
-
+.inner-sidebar{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
